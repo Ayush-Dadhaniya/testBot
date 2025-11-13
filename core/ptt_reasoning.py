@@ -79,7 +79,7 @@ Provide your analysis and initial structure in JSON format:
     "analysis": "Your assessment of what this goal requires and approach",
     "structure": [
         {{
-            "type": "phase/category/direct",
+            "type": "phase",
             "name": "Name of organizational structure",
             "description": "What this encompasses",
             "justification": "Why this structure element is needed for this goal"
@@ -211,7 +211,7 @@ Statistics:
 Select the most strategic next action and provide your response in JSON format:
 
 {{
-    "selected_task_index": 1-based index from candidate list,
+    "selected_task_index": 1,
     "rationale": "Why this task is the best next step",
     "command": "Intelligent request that leverages available tools effectively",
     "tool": "Which available tool to use, or 'manual' if no suitable tool",

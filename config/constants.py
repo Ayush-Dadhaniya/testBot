@@ -3,7 +3,7 @@
 from colorama import Fore, Style
 
 # ASCII Art and Branding
-ASCII_TITLE = f"""
+ASCII_TITLE = rf"""
 {Fore.WHITE}             ('-. .-.               .-')    .-') _            _  .-')     ('-.    (`\ .-') /`{Style.RESET_ALL}
 {Fore.WHITE}            ( OO )  /              ( OO ). (  OO) )          ( \( -O )  _(  OO)    `.( OO ),'{Style.RESET_ALL}
 {Fore.WHITE}  ,----.    ,--. ,--. .-'),-----. (_)---\_)/     '._  .-----. ,------. (,------.,--./  .--.  {Style.RESET_ALL}

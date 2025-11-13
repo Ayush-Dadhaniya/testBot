@@ -1,3 +1,259 @@
 {
-  "servers": []
+  "servers": [
+    {
+      "name": "AlterX",
+      "params": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "gc-alterx-mcp"
+        ],
+        "env": {
+          "ALTERX_PATH": "C:\\Users\\HP\\go\\bin\\alterx.exe"
+        }
+      },
+      "cache_tools_list": true
+    },
+    {
+      "name": "Amass",
+      "params": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "gc-amass-mcp"
+        ],
+        "env": {
+          "AMASS_PATH": "D:\\ghostcrew\\tools\\amass.exe"
+        }
+      },
+      "cache_tools_list": true
+    },
+    {
+      "name": "Arjun",
+      "params": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "gc-arjun-mcp"
+        ],
+        "env": {
+          "ARJUN_PATH": "D:\\ghostcrew\\.venv\\Scripts\\arjun.exe"
+        }
+      },
+      "cache_tools_list": true
+    },
+    {
+      "name": "Assetfinder",
+      "params": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "gc-assetfinder-mcp"
+        ],
+        "env": {
+          "ASSETFINDER_PATH": "D:\\ghostcrew\\tools\\assetfinder.exe"
+        }
+      },
+      "cache_tools_list": true
+    },
+    {
+      "name": "Certificate Transparency",
+      "params": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "gc-crtsh-mcp"
+        ],
+        "env": {}
+      },
+      "cache_tools_list": true
+    },
+    {
+      "name": "FFUF Fuzzer",
+      "params": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "gc-ffuf-mcp"
+        ],
+        "env": {
+          "FFUF_PATH": "C:\\Users\\HP\\go\\bin\\ffuf.exe"
+        }
+      },
+      "cache_tools_list": true
+    },
+    {
+      "name": "httpx",
+      "params": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "gc-httpx-mcp"
+        ],
+        "env": {
+          "HTTPX_PATH": "D:\\ghostcrew\\.venv\\Scripts\\httpx.exe"
+        }
+      },
+      "cache_tools_list": true
+    },
+    {
+      "name": "Hydra",
+      "params": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "gc-hydra-mcp"
+        ],
+        "env": {
+          "HYDRA_PATH": "D:\\ghostcrew\\tools\\hydra.exe"
+        }
+      },
+      "cache_tools_list": true
+    },
+    {
+      "name": "Katana",
+      "params": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "gc-katana-mcp"
+        ],
+        "env": {
+          "KATANA_PATH": "C:\\Users\\HP\\go\\bin\\katana.exe"
+        }
+      },
+      "cache_tools_list": true
+    },
+    {
+      "name": "Masscan",
+      "params": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "gc-masscan-mcp"
+        ],
+        "env": {
+          "MASSCAN_PATH": "D:\\ghostcrew\\tools\\masscan.exe"
+        }
+      },
+      "cache_tools_list": true
+    },
+    {
+      "name": "Metasploit",
+      "params": {
+        "command": "uvx",
+        "args": [
+          "gc-metasploit",
+          "--transport",
+          "stdio"
+        ],
+        "env": {
+          "MSF_PASSWORD": "",
+          "MSF_SERVER": "127.0.0.1",
+          "MSF_PORT": "55553",
+          "MSF_SSL": "false",
+          "PAYLOAD_SAVE_DIR": "knowledge"
+        }
+      },
+      "cache_tools_list": true
+    },
+    {
+      "name": "Nmap Scanner",
+      "params": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "gc-nmap-mcp"
+        ],
+        "env": {
+          "NMAP_PATH": "C:\\Program Files (x86)\\Nmap\\nmap.exe"
+        }
+      },
+      "cache_tools_list": true
+    },
+    {
+      "name": "Nuclei Scanner",
+      "params": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "gc-nuclei-mcp"
+        ],
+        "env": {
+          "NUCLEI_PATH": "C:\\Users\\HP\\go\\bin\\nuclei.exe"
+        }
+      },
+      "cache_tools_list": true
+    },
+    {
+      "name": "Scout Suite",
+      "params": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "gc-scoutsuite-mcp"
+        ],
+        "env": {
+          "SCOUTSUITE_PATH": "D:\\ghostcrew\\.venv\\Scripts\\scout.exe"
+        }
+      },
+      "cache_tools_list": true
+    },
+    {
+      "name": "shuffledns",
+      "params": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "gc-shuffledns-mcp"
+        ],
+        "env": {
+          "SHUFFLEDNS_PATH": "C:\\Users\\HP\\go\\bin\\shuffledns.exe"
+        }
+      },
+      "cache_tools_list": true
+    },
+    {
+      "name": "SQLMap",
+      "params": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "gc-sqlmap-mcp"
+        ],
+        "env": {
+          "SQLMAP_PATH": "D:\\ghostcrew\\.venv\\Scripts\\sqlmap.exe"
+        }
+      },
+      "cache_tools_list": true
+    },
+    {
+      "name": "SSL Scanner",
+      "params": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "gc-sslscan-mcp"
+        ],
+        "env": {
+          "SSLSCAN_PATH": "D:\\ghostcrew\\tools\\sslscan.exe"
+        }
+      },
+      "cache_tools_list": true
+    },
+    {
+      "name": "Wayback URLs",
+      "params": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "gc-waybackurls-mcp"
+        ],
+        "env": {
+          "WAYBACKURLS_PATH": "C:\\Users\\HP\\go\\bin\\waybackurls.exe"
+        }
+      },
+      "cache_tools_list": true
+    }
+  ]
 }
