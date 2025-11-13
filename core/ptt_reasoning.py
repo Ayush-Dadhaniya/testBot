@@ -73,26 +73,15 @@ Consider:
 
 IMPORTANT: When suggesting tool usage, be specific about commands and modules. For example:
 
-Provide your analysis and initial structure in JSON format:
+Provide your analysis and initial tasks in a simplified JSON format:
 
 {{
-    "analysis": "Your assessment of what this goal requires and approach",
-    "structure": [
-        {{
-            "type": "phase",
-            "name": "Name of organizational structure",
-            "description": "What this encompasses",
-            "justification": "Why this structure element is needed for this goal"
-        }}
-    ],
+    "analysis": "Your assessment of what this goal requires and your approach",
     "initial_tasks": [
         {{
-            "description": "Specific actionable task",
-            "parent": "Which structure element this belongs to, or 'root' for direct tasks",
-            "tool_suggestion": "Which available tool to use, or 'manual' if no suitable tool",
-            "priority": 1-10,
-            "risk_level": "low/medium/high",
-            "rationale": "Why this task is necessary for the goal"
+            "description": "A specific and actionable task to start with",
+            "tool_suggestion": "The best available tool for this task, or 'manual'",
+            "rationale": "Why this task is a necessary first step"
         }}
     ]
 }}
@@ -208,15 +197,14 @@ Statistics:
 - In Progress: {sum(1 for n in self.tree_manager.nodes.values() if n.status == NodeStatus.IN_PROGRESS)}
 - Pending: {sum(1 for n in self.tree_manager.nodes.values() if n.status == NodeStatus.PENDING)}
 
-Select the most strategic next action and provide your response in JSON format:
+Select the most strategic next action and provide your response in a simplified JSON format:
 
 {{
     "selected_task_index": 1,
     "rationale": "Why this task is the best next step",
-    "command": "Intelligent request that leverages available tools effectively",
-    "tool": "Which available tool to use, or 'manual' if no suitable tool",
-    "expected_outcome": "What we hope to discover/achieve",
-    "alternative_if_blocked": "Backup task index if this fails"
+    "command": "A creative and effective command that uses the suggested tool",
+    "tool": "The single best tool for this task, or 'manual'",
+    "expected_outcome": "What you expect to find or accomplish with this command"
 }}
 
 Consider:
