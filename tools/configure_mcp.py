@@ -46,6 +46,21 @@ def get_tool_search_variants(exe_name):
     
     return variants
 
+def get_platform_specific_config(server):
+    """Get platform-specific command and arguments"""
+    command = server['command']
+    args = server['args']
+    exe_name = server.get('exe_name')
+
+    if platform.system() == "Windows":
+        if exe_name and exe_name.endswith('.py'):
+            command = 'python'
+            args.insert(0, exe_name)
+        elif exe_name and not exe_name.endswith('.exe'):
+            print(f"{Fore.YELLOW}Warning: Tool '{server['name']}' may not be compatible with Windows. Please consider running it via WSL.{Style.RESET_ALL}")
+
+    return command, args
+
 def auto_discover_tool_path(server):
     """Auto-discover tool path with user confirmation"""
     if not server.get('exe_name'):
@@ -396,12 +411,15 @@ def main():
                     value = input(f"Enter value for {extra_var} (default: {default_value}): ").strip()
                     env_vars[extra_var] = value if value else default_value
         
+        # Get platform-specific command and args
+        command, args = get_platform_specific_config(server)
+
         # Add to configured servers
         configured_servers.append({
             "name": server['name'],
             "params": {
-                "command": server['command'],
-                "args": server['args'],
+                "command": command,
+                "args": args,
                 "env": env_vars
             },
             "cache_tools_list": True
